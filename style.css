@@ -1,46 +1,209 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(assets/Norse-Bold.otf) format('opentype');
+}
+
+:root{
+    --button-color: #596D48;
+    --input-field-border: #E5E7EB;
+}
+
+body {
+  overflow: hidden;
 }
 
 .super-div {
-    display: flex;
+  display: flex;
 }
 
-/* section {
-    float:left;
-} */
-
 .background-section {
-    width: 566px;
+  width: 566px;
 }
 
 .main-section {
-    flex:1 0 0%;
-    display: flex;
-    padding: 2rem;
-    flex-direction: column;
-    gap: 50px;
-    justify-content: center;
+  flex: 1 0 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
 }
 
 img {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-section-text-1 {
+  margin: 2rem;
+}
+
+.main-section-text-2 {
+  margin: 2rem;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 1rem;
+  left: 25%;
+}
+
+.cat-din-container {
+    background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 16%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* opacity: 0.5; */
+}
+.cat-din-container img {
+  height: 120px;
+  width: 100px;
+}
+
+.cat-din-container p {
+  color: white;
+}
+
+.cat-din-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.cat-din-item > div > p {
+    font-family:'Norse-Bold';
+    font-size: 5rem;
+}
+/* ////////\ FORM /\\\\\\\ */
+.form-super-container {
+    background-color: aqua;
+    padding-top: 1.8rem;
+    padding-bottom: 2rem;
+    padding-left: 2.5rem;
+}
+
+.form-super-container > h3 {
+margin-bottom: 22px;
+}
+
+form {
+  display: flex;
+  gap: 30px;
+  
+}
+
+.form-group-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* ////////\ BUTTON /\\\\\\\ */
+
+button {
+    margin-bottom: 22px;
 }
