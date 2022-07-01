@@ -95,6 +95,7 @@ video {
   font-family: "Norse-Bold";
   src: url(assets/Norse-Bold.otf) format("opentype");
 }
+
 :root {
   --button-color: #596d48;
   --input-field-border: #e5e7eb;
@@ -117,7 +118,7 @@ body {
   flex: 1 0 0%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
   justify-content: center;
 }
 
@@ -134,6 +135,10 @@ img {
   margin: 2rem;
 }
 
+.main-section-text-2 > p {
+  font-weight: 400;
+}
+
 .hero-image {
   position: relative;
 }
@@ -147,7 +152,7 @@ img {
 .photo-credit-2 {
   position: absolute;
   bottom: 2.3rem;
-  left: 25%;
+  left: 23.5%;
 }
 
 .cat-din-container {
@@ -188,6 +193,7 @@ img {
   padding-top: 1.8rem;
   padding-bottom: 2rem;
   padding-left: 2.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .form-super-container > h3 {
@@ -198,23 +204,40 @@ form {
   display: flex;
   gap: 30px;
   text-transform: uppercase;
+  font-size: 14px;
+}
+
+input {
+  border: 2px solid var(--input-field-border);
+}
+
+input:focus {
+  border-color: blue;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .form-group-1 {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 10px;
 }
 
 .form-group-2 {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 10px;
 }
 
 .form-super-container > h3 {
   font-size: 24px;
   font-weight: 500;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 /* ////////\ BUTTON /\\\\\\\ */
@@ -249,3 +272,26 @@ button {
   font-weight: 500;
 }
 
+.main-section-text-2 > p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main-section-text-2 > p > a {
+  color: var(--button-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+/* Links */
+
+.background-section  a:link,
+.background-section  a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.photo-credit > p {
+  color: #fff;
+  font-size: 16px;
+}
